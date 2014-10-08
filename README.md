@@ -9,4 +9,4 @@ One day there will be a calculator, spreadsheet, and database behind it all to k
 
 Once the TAD trip is over, the traveler can request the full spreadsheet be published, emailed to them, and printed if desired so they can track how much was spent during their trip.
 
-This entire application will be completed, functional, and on the market by Christmas 2014.
+First Iteration will be online and working by Jan 1, 2015.
