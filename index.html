@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>2015 Per Diem Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="responsiveform.css">
+	<link rel="javascript" type="text/javascript" href="scripts/gsa-connect.js">
+
+
+<script>
+function insertText () {
+    document.getElementById('location_td').innerHTML = "NEW ORLEANS, LA";
+    document.getElementById('lodging_td').innerHTML = "$95 / night";
+    document.getElementById('mie_td').innerHTML = "$65 / day";
+    document.getElementById('total_mie_td').innerHTML = "$130";
+
+}
+</script>
+
+
+</head>
+
+<body>
+
+<div id="envelope">
+
+<form action="" method="post">
+<header>
+    <h2>2015 Per Diem Calculator</h2>
+    <p>Input either City AND State, or Zip Code to find your TAD Location.</p>
+</header>
+    <tr> 
+        
+    	<td><input type="text" name="query_zip" placeholder="ZIP CODE"><br></td>
+    </tr>
+    <tr> 
+       
+    	<td><input type="text" name="query_city" placeholder="CITY"></td>
+
+    	<td><input type="text" id="state_acro" name="query_state" placeholder="ST"><br></td>
+    </tr>
+    <tr> 
+       
+    	<td><input type="text" name="query_start" placeholder="START DATE"><br></td>
+       
+    	<td><input type="text" name="query_end" placeholder="END DATE"><br></td>    	
+    </tr>
+	<!--	<label>City </label><br />
+	<input type="text" name="city" placeholder="Dallas" width="100px;"><br />
+
+	<label>State </label><br />
+	<input type="text" id="stateName" name="state" placeholder="Texas" width="50px;">
+
+	<!--  STATE ACRONYM DYNAMIC BLOCK FOR JSON UPLOAD 
+	<input type="text" id="stAcroBox" name="stateAcronym" placeholder="TX" width="20px;"><br />
+
+	<label>Start Date of Travel </label><br/>
+	<input type="date" name="startDate" ><br /><br />
+		
+	<label>End Date of Travel </label><br />
+	<input type="date" name="endDate" ><br /><br />
+
+<!--	<label>  Message </label>
+	<textarea name="message" rows="10" cols="15" placeholder="Message"></textarea> -->
+
+
+
+
+ <table id="output_table">
+  <tr>
+    <th>Location: </th>
+    <td class="output_cell" id="location_td"> </td>
+  </tr>
+  
+  <tr>
+    <th>Lodging Rate:</th>
+    <td class="output_cell" id="lodging_td"> </td>
+  </tr>
+  
+  <tr>
+    <th>M&IE: </th>
+    <td class="output_cell" id="mie_td"> </td>
+  </tr>
+
+  <tr>
+    <th>Total M&IE:</th>
+    <td class="output_cell" id="total_mie_td"> </td>
+  </tr>
+</table>
+	<input type="submit" value="SEARCH PER DIEM RATES" id="submit" onclick="insertText();">		 
+</form>
+
+
+
+
+  <!--  <div id="form-control">
+      <form>
+      <table id="formTable">
+        <tr> 
+          <th>Zip Code: </th>         
+          <td><input type="text" name="queryZip"><br></td>
+        </tr>
+        <tr> 
+          <th>City:</th>              
+          <td><input type="text" name="queryCity"><br></td>
+        </tr>
+        <tr> 
+          <th>State:</th>             
+          <td><input type="dropdown" name="queryState"><br></td>
+        </tr>
+        <tr> 
+          <th>Trip Start Date:</th>   
+          <td><input type="date" name="queryStartDate"><br></td>
+        </tr>
+        <tr> 
+          <th>Trip End Date: </th>    
+          <td><input type="date" name="queryEndDate"></td>
+        </tr>
+      </table>
+      <input type="button" class="btn btn-primary btn-sm" value="Submit Per Diem Request" onclick='submit();'>
+      </form>
+    </div>  -->
+
+</div>
+
+</body>
+</html>
